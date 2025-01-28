@@ -1,4 +1,4 @@
-# readly
+# Readly
 
 A new Flutter project.
 

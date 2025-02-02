@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:readly/splash_view.dart';
+import 'package:readly/Features/Splash/Presentation/Views/splash_view.dart';
+
 
 void main() {
   runApp(const ReadlyApp());
@@ -12,6 +13,7 @@ class ReadlyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      
       home: SplashView(),
     );
   }

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:readly/Features/Splash/Presentation/Views/splash_view.dart';
+import 'package:get/get.dart'; // Import the GetX package
 
+import 'package:readly/Features/Splash/Presentation/Views/splash_view.dart';
+import 'package:readly/constant.dart';
 
 void main() {
   runApp(const ReadlyApp());
@@ -11,11 +13,11 @@ class ReadlyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      
+    return GetMaterialApp(
+      theme: ThemeData().copyWith(
+        scaffoldBackgroundColor: primaryColor,
+      ),
       home: SplashView(),
     );
   }
 }
-

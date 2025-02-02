@@ -14,9 +14,10 @@ class ReadlyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      theme: ThemeData().copyWith(
-        scaffoldBackgroundColor: primaryColor,
-      ),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData.dark().copyWith(
+          //scaffoldBackgroundColor: Color.fromARGB(255, 20, 20, 20),
+          ),
       home: SplashView(),
     );
   }
